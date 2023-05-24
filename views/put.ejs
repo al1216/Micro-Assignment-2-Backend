@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Recipe Form</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="../book.png" alt="" class="book" />
+      <div class="heading-wrapper">
+        <h1 class="heading">Update Recipe  Form</h1>
+      </div>
+      
+      <form action="/update-receipe/<%= id%>" class="recipe" method="post">
+        <div class="left">
+          <h2 class="name">Enter Recipe Name:</h2>
+          <input
+            type="text"
+            name="receipeName"
+            class="receipeName"
+            placeholder="Receipe Name"
+            
+          />
+          <h2 class="name">Enter Recipe Time:</h2>
+          <input
+            type="text"
+            name="receipeTime"
+            class="receipeTime"
+            placeholder="Receipe Time"
+            
+          />
+        </div>
+        <div class="right">
+        <h2 class="name">Enter Ingredeints <br> (seperated by comma (,)): </h2>
+          <input
+            type="text"
+            name="ingredeints"
+            class="ingredeints"
+            placeholder="Ingredeints"
+            
+          />
+          <h2 class="name">Enter No. of serves: </h2>
+          <input
+            type="text"
+            name="serves"
+            class="serves"
+            placeholder="Serves"
+            
+          />
+        </div>
+        <button type="submit" style="width: 14rem">Update Recipe ❤️</button>
+      </form>
+    </div>
+  </body>
+</html>

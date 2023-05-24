@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Recipe Form</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="../book1.png" alt="" class="book" />
+      <div class="heading-wrapper">
+        <h1 class="heading">Delete Recipe  Form</h1>
+      </div>
+      
+      <form action="/delete-receipe/<%= id%>" class="recipe" method="post">
+        <h2 class="name" style="position: absolute ;top: 35%">Click on the button below <br> to delete the recipe ...</h2>
+
+        <button type="submit" style="width: 14rem; top: 50%; left: 42%">Delete Recipe ❤️</button>
+      </form>
+    </div>
+  </body>
+</html>

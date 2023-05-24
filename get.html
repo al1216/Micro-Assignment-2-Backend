@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Recipe Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="book.png" alt="" class="book" />
+      <div class="heading-wrapper">
+        <h1 class="heading">Add Recipe  Form</h1>
+      </div>
+      
+      <form action="/add-recipe" class="recipe" method="post">
+        <div class="left">
+          <h2 class="name"><span>*</span>Enter Recipe Name:</h2>
+          <input
+            type="text"
+            name="receipeName"
+            class="receipeName"
+            placeholder="Receipe Name"
+            required
+          />
+          <h2 class="name"><span>*</span>Enter Recipe Time:</h2>
+          <input
+            type="text"
+            name="receipeTime"
+            class="receipeTime"
+            placeholder="Receipe Time"
+            required
+          />
+        </div>
+        <div class="right">
+        <h2 class="name"><span>*</span>Enter Ingredeints <br> (seperated by comma (,)): </h2>
+          <input
+            type="text"
+            name="ingredeints"
+            class="ingredeints"
+            placeholder="Ingredeints"
+            required
+          />
+          <h2 class="name"><span>*</span>Enter No. of serves: </h2>
+          <input
+            type="text"
+            name="serves"
+            class="serves"
+            placeholder="Serves"
+            required
+          />
+        </div>
+        <button type="submit">Add Recipe ❤️</button>
+      </form>
+    </div>
+  </body>
+</html>
